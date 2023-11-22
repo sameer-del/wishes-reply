@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=IBM+Plex+Serif&family=Love+Ya+Like+A+Sister&family=Playfair+Display:ital,wght@1,800&family=Poppins&family=Roboto+Serif:opsz@8..144&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=IBM+Plex+Serif&family=Love+Ya+Like+A+Sister&family=Playfair+Display:ital,wght@1,800&family=Poppins&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=Fredericka+the+Great&family=IBM+Plex+Serif&family=Love+Ya+Like+A+Sister&family=Nabla&family=Nosifer&family=Playfair+Display:ital,wght@1,800&family=Poppins&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,700&family=Sacramento&family=Ubuntu&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+body{
+
+ min-height: 100vh;
+ font-family: 'ubuntu', sans-serif;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 500px;
+  position: fixed;
+  height: 500px;
+  border-radius:  10px;
+  box-shadow: black 2px 5px 10px 0px;
+ 
+}
+.box{
+  display: flex;
+  border-radius:  10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent ;
+  height: 500px;
+  width: auto;
+  
+}
+.box h1{
+  margin: 20px;
+  text-shadow: 3px 3px 5px rgba(255,152,167,0.67);
+  text-transform: uppercase;
+  font-family: 'Abril Fatface';
+  letter-spacing: 2px;
+  color: rgba(25, 36, 55, 0.929);
+}
+.box p{
+  margin: 5%;
+  font-weight: 800;
+  line-height: 2rem;
+  background-color: transparent;
+  border-radius: 10px;
+  color: rgba(25, 36, 55, 0.929);
+  padding: 20px;
+  position: realative;
+  font-family: 'IBM Plex Serif', serif;
+
+}
+
+
+.box button{
+  padding: 10px 20px 10px 20px;
+  background-color: transparent;
+  color: rgba(25, 36, 55, 0.929);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+}
+.photo{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.photo img{
+  background-blend-mode: color-burn;
+
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .box {
+    height: auto;
+  }
+
+  .box p {
+    padding: 12px;
+  }
+
+  .box button {
+    margin-top: 20px; 
+  }
+  .box h1{
+    font-size: 25px;
+  }
+  .photo{
+    margin-top: 20px;
+  }
+  .box button{
+    
+    margin-top: 0;
+  }
+  
+}
